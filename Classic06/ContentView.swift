@@ -8,14 +8,55 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var number = 0
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack{
+            OldVIew()
+                .padding()
+            NewVIew()
+                .padding()
+            Text("view\(number)")
+            Button(action: {
+                number = number + 1
+            }, label: {
+                Text("按鈕")
+            })
+        }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+    }
+}
+//舊版用法
+struct OldVIew : View {
+    @ObservedObject var age = Age()
+    var body: some View{
+        VStack {
+            Text("ss")
+            Text("Age:\(age.number)")
+            Button(action: {
+                age.number += 1
+            }, label: {
+                Text("Age + 1")
+            })
+        }
+    }
+}
+//新版用法
+struct NewVIew : View {
+    @StateObject var age = Age()
+    var body: some View{
+        VStack {
+            Text("ss")
+            Text("Age:\(age.number)")
+            Button(action: {
+                age.number += 1
+            }, label: {
+                Text("Age + 1")
+            })
+        }
     }
 }

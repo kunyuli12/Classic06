@@ -7,19 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA29C7E727000F580074295A /* makeClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA29C7E627000F580074295A /* makeClock.swift */; };
 		BA44B79E26FE05C700757B48 /* Classic06App.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA44B79D26FE05C700757B48 /* Classic06App.swift */; };
 		BA44B7A026FE05C700757B48 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA44B79F26FE05C700757B48 /* ContentView.swift */; };
 		BA44B7A226FE05CD00757B48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA44B7A126FE05CD00757B48 /* Assets.xcassets */; };
 		BA44B7A526FE05CD00757B48 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA44B7A426FE05CD00757B48 /* Preview Assets.xcassets */; };
+		BA44B7AE26FE062E00757B48 /* DataModle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA44B7AD26FE062E00757B48 /* DataModle.swift */; };
+		BA47F7622701A17C00D28498 /* Talkview.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA47F7612701A17C00D28498 /* Talkview.swift */; };
+		BA47F7652701B09300D28498 /* contactview.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA47F7642701B09300D28498 /* contactview.swift */; };
+		BA47F7682701B0C500D28498 /* contactviewTurn.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA47F7672701B0C500D28498 /* contactviewTurn.swift */; };
+		BACAC9E9270088C50084291A /* Clock.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACAC9E8270088C50084291A /* Clock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BA29C7E627000F580074295A /* makeClock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = makeClock.swift; sourceTree = "<group>"; };
 		BA44B79A26FE05C700757B48 /* Classic06.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Classic06.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA44B79D26FE05C700757B48 /* Classic06App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classic06App.swift; sourceTree = "<group>"; };
 		BA44B79F26FE05C700757B48 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BA44B7A126FE05CD00757B48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA44B7A426FE05CD00757B48 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BA44B7A626FE05CD00757B48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA44B7AD26FE062E00757B48 /* DataModle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModle.swift; sourceTree = "<group>"; };
+		BA47F7612701A17C00D28498 /* Talkview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Talkview.swift; sourceTree = "<group>"; };
+		BA47F7642701B09300D28498 /* contactview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contactview.swift; sourceTree = "<group>"; };
+		BA47F7672701B0C500D28498 /* contactviewTurn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contactviewTurn.swift; sourceTree = "<group>"; };
+		BACAC9E8270088C50084291A /* Clock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,12 @@
 			children = (
 				BA44B79D26FE05C700757B48 /* Classic06App.swift */,
 				BA44B79F26FE05C700757B48 /* ContentView.swift */,
+				BA44B7AD26FE062E00757B48 /* DataModle.swift */,
+				BA29C7E627000F580074295A /* makeClock.swift */,
+				BA47F7612701A17C00D28498 /* Talkview.swift */,
+				BA47F7642701B09300D28498 /* contactview.swift */,
+				BA47F7672701B0C500D28498 /* contactviewTurn.swift */,
+				BACAC9E8270088C50084291A /* Clock.swift */,
 				BA44B7A126FE05CD00757B48 /* Assets.xcassets */,
 				BA44B7A626FE05CD00757B48 /* Info.plist */,
 				BA44B7A326FE05CD00757B48 /* Preview Content */,
@@ -138,8 +156,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA47F7682701B0C500D28498 /* contactviewTurn.swift in Sources */,
+				BA29C7E727000F580074295A /* makeClock.swift in Sources */,
+				BA44B7AE26FE062E00757B48 /* DataModle.swift in Sources */,
 				BA44B7A026FE05C700757B48 /* ContentView.swift in Sources */,
 				BA44B79E26FE05C700757B48 /* Classic06App.swift in Sources */,
+				BA47F7652701B09300D28498 /* contactview.swift in Sources */,
+				BA47F7622701A17C00D28498 /* Talkview.swift in Sources */,
+				BACAC9E9270088C50084291A /* Clock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
