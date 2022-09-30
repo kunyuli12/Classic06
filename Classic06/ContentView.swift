@@ -32,16 +32,31 @@ struct ContentView_Previews: PreviewProvider {
 }
 //舊版用法
 struct OldVIew : View {
+    
     @ObservedObject var age = Age()
+    
     var body: some View{
         VStack {
             Text("ss")
+            
             Text("Age:\(age.number)")
-            Button(action: {
-                age.number += 1
-            }, label: {
-                Text("Age + 1")
-            })
+            
+            HStack{
+                Button(action: {
+                    age.number += 1
+                }, label: {
+                    Text("Age + 1")
+                })
+                Image(systemName:
+                        "heart.circle.fill")
+                    .resizable()
+                    .frame(width: 50, height: 50)
+                    .foregroundColor(age.ONOFF ? Color(.red) : Color(.gray))
+                    .onTapGesture {
+                        age.ONOFF.toggle()
+                    }
+            }
+            
         }
     }
 }
@@ -52,11 +67,21 @@ struct NewVIew : View {
         VStack {
             Text("ss")
             Text("Age:\(age.number)")
-            Button(action: {
-                age.number += 1
-            }, label: {
-                Text("Age + 1")
-            })
+            HStack{
+                Button(action: {
+                    age.number += 1
+                }, label: {
+                    Text("Age + 1")
+                })
+                
+                Image(systemName: "heart.circle.fill")
+                    .resizable()
+                    .frame(width: 50, height: 50)
+                    .foregroundColor(age.ONOFF ? Color(.red) : Color(.gray))
+                    .onTapGesture {
+                        age.ONOFF.toggle()
+                    }
+            }
         }
     }
 }

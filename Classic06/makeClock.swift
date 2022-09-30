@@ -91,12 +91,13 @@ struct makeClock: View {
                         VStack {
                             Spacer()
                             Text(timeText)
-                                .onReceive(timer){ input in
+                               /* .onReceive(timer){ input in
                                     number = input
                                     let dataformate = DateFormatter()
                                     dataformate.dateFormat = "YYYY/MM/dd"
                                     timeText = dataformate.string(from: input)
-                                }.font(.body)
+                                }*/
+                                .font(.body)
                                 .foregroundColor(Color(#colorLiteral(red: 0.9686274529, green: 0.78039217, blue: 0.3450980484, alpha: 1)))
                             Text(timeText1)
                                 .onReceive(timer){ input in
